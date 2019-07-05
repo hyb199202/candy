@@ -1,4 +1,4 @@
-package com.candymanage.candy.controller;
+package com.candymanage.candy.web.controller;
 
 import com.candymanage.candy.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
