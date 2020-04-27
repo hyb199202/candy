@@ -11,4 +11,6 @@ import java.util.List;
  */
 public interface CityService {
     List<City> getCtiyList(Integer pCode);
+
+    String getCtiy(String cityCode);
 }

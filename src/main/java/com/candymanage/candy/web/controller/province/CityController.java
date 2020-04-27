@@ -23,4 +23,10 @@ public class CityController {
     public Object getCity(@RequestParam Integer provinceCode) {
         return cityService.getCtiyList(provinceCode);
     }
+
+
+    @RequestMapping(value = "/getCity", method = RequestMethod.GET)
+    public Object getCityName(@RequestParam(value = "cityCode") String cityCode) {
+        return cityService.getCtiy(cityCode);
+    }
 }

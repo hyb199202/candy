@@ -22,4 +22,15 @@ public class CityServiceImpl implements CityService {
     public List<City> getCtiyList(Integer pCode) {
         return cityDAO.getCtiyList(pCode);
     }
+
+    @Override
+    public String getCtiy(String cityCode) {
+        String cityName = cityDAO.getCtiy(cityCode);
+        if ("null".equals(cityName)) {
+            System.out.println(1);
+        } else {
+            System.out.println(0);
+        }
+        return cityName;
+    }
 }

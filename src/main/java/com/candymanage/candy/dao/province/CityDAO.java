@@ -11,4 +11,7 @@ import java.util.List;
 public interface CityDAO {
     @Select("SELECT * FROM candy_city WHERE p_code =#{pCode}")
     List<City> getCtiyList(@Param("pCode") Integer pCode);
+
+    @Select("SELECT city_name FROM candy_city WHERE city_code =#{cityCode}")
+    String getCtiy(@Param("cityCode") String cityCode);
 }
