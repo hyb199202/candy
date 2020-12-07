@@ -10,9 +10,22 @@ spring:
     auto: true #开启aop
   rabbitmq:
     host:
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    password:
+    timeout: 1000
+    lettuce:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 9
+        min-idle: 0
 mybatis:
   mapper-locations: classpath*:mapper/*.xml
   configuration:
     map-underscore-to-camel-case: true  #开启驼峰命名映射
+
 
 #rabbitMq
